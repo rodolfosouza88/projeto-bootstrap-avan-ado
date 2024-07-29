@@ -18,6 +18,7 @@ header {
     min-height: 350px; /* Definindo uma altura mínima para o card */
     max-height: 100%; /* Ajustando a altura máxima */
     overflow-y: auto; /* Permitindo rolagem vertical se necessário */
+    margin-bottom: 50px;
 }
 
 .card-img-overlay {
@@ -59,19 +60,20 @@ header {
 }
 
 @media (max-width: 768px) {
-    .card h4 {
-        font-size: 1.2em;
+    .row {
+        margin: 0; /* Garantir que não haja margens laterais */
     }
-    .card p {
-        font-size: 0.8em;
+
+    .col-lg-4, .col-md-6, .col-sm-12 {
+        padding: 0; /* Remover padding para evitar rolagem horizontal */
     }
 }
 
 @media (max-width: 576px) {
     .card h4 {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     .card p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 }
